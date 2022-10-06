@@ -36,7 +36,11 @@ if (userAge < 18) {
 } else if (userAge > 65) {
     ticketPrice = kmPrice * 40 / 100;
     console.log(ticketPrice, typeof(ticketPrice));
+} else {
+    ticketPrice = kmPrice;
 }
+
+ticketPrice = Math.round(ticketPrice * 100) / 100;
 
 const message = `Your Ticket Price is ${ticketPrice}!`;
 
