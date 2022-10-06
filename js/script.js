@@ -26,15 +26,15 @@ console.log(userAge, typeof(userAge));
 const kmPrice = kmTravelled * 0.21; 
 console.log(kmPrice, typeof(kmPrice));
 
-let ticketPrice = "";
+let ticketPrice;
 
 // Prezzo Biglietto
 if (userAge < 18) {
-    let ticketPrice = kmPrice * 20 / 100;
+    ticketPrice = kmPrice * 20 / 100;
     console.log(ticketPrice, typeof(ticketPrice));
 
 } else if (userAge > 65) {
-    let ticketPrice = kmPrice * 40 / 100;
+    ticketPrice = kmPrice * 40 / 100;
     console.log(ticketPrice, typeof(ticketPrice));
 }
 
