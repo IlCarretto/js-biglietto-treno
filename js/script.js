@@ -30,11 +30,10 @@ let ticketPrice;
 
 // Prezzo Biglietto
 if (userAge < 18) {
-    ticketPrice = kmPrice * 20 / 100;
-    console.log(ticketPrice, typeof(ticketPrice));
-
+    ticketPrice = kmPrice - (kmPrice * 20 / 100);
+    console.log(ticketPrice, typeof(ticketPrice)); 
 } else if (userAge > 65) {
-    ticketPrice = kmPrice * 40 / 100;
+    ticketPrice = kmPrice - (kmPrice * 40 / 100);
     console.log(ticketPrice, typeof(ticketPrice));
 } else {
     ticketPrice = kmPrice;
